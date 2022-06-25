@@ -3,21 +3,21 @@
 
 <head>
 <meta charset="UTF-8">
-<title>Covid Vs. Housing Market</title>
+<title>New York, NY</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="Assets/css/styling.css">
+<link rel="stylesheet" type="text/css" href="Assets/css/three.css">
 </head>
 
 <body>
     <header>
         <div>
 
-            <h1><b>Covid Vs. The Housing Market</b></h1>
+            <h1><b>New York County, New York</b></h1>
             
         </div>
-    </header>
         <div class="container">
             <div class="row">
+
                 <div class="col">
                     <button type="button" id="buttonwidth" class="btn btn-light"><a href="index.html">Home</a></button>
                 </div>
@@ -38,52 +38,45 @@
                 </div>
                 <div class="col">
                     <button type="button" id="buttonwidth" class="btn btn-light"><a href="analysis.html">Data/Analysis</a></button>
+
                 </div>
             </div>
         </div>
-        <div>
 
+        <div>
             <button type="button" id="b2" class="btn btn-link">Anthony's GitHub</button>
         </div>
-        <div id="pspacing">
-
-            <p>We decided to build our project around the question, "How has covid 
-                impacted the housing market?".  To answer this question, we looked 
-                to sources Zillow for spreadsheets on the housing market and an API 
-                through covidactnow.org for the covid data.
-            </p>
-            <p>My responsibility was the entirety of the portion on covid.  Data was 
-                drawn through the covidactnow.org API with desired stats placed into 
-                data frames.  This process occurred for the three counties: Los Angeles, Travis, and 
-                New York.  The data frames are then plotted using matplotlib to 
-                display and compare with each other and the housing market data.  
-                I had predicted the housing market would suffer due to the number 
-                of jobs lost during the pandemic.  What is your prediction and why?
-            </p>
-
-        </div>
-        <br>
         <div class="container-fluid">
             <div class="row justify-content-center">
                 <div>
-                    <a href="los_angeles.html">
-                        <img src="Visualizations/california_cases_deaths.png"/>
-                    </a>
+                    <img src="Visualizations/newyork_cases.png"/>
                 </div>
                 <div>
-                    <a href="austin.html">
-                        <img src="Visualizations/texas_cases_deaths.png"/>
-                    </a>
-                </div>
+                    <img src="Visualizations/newyork_deaths.png"/>
+                </div>    
             </div>
             <div class="row justify-content-center">
-                <a href="newyork.html">
-                    <img src="Visualizations/newyork_cases_deaths.png"/>
-                </a>
+                <div>
+                    <img id="imgtwo" src="Visualizations/newyork_cases_deaths.png"/>
+                </div>
             </div>
         </div>
         
-  
+        <div id="pspacing" class="container">
+            <div class="row">
+                <p>Cases in Los Angeles started rising rapidly during the months of November 2020
+                to January 2021.  On December 18, 2020, the first vaccination went into effect 
+                with the FDA issuing an Emergency Use Athorization (EUA) for the Pfizer-BioNTech 
+                COVID-19 vaccine.  This seemed to mitigate the spread until a new strain was discovered
+                on November 2, 2021 thus explains the rise in cases from months December 2021 to
+                January 2022.  On November 29, 2021 the CDC recommends the public to get the recent
+                released COVID-19 booster explaining the stagnant growth of cases during the month
+                of January 2021.  As for the deaths, there is no rapid growth since the vaccination
+                was first released so it appears the vaccination has saved many lives.
+                </p>
+            </div>            
+        </div>
+    </header>
 </body>
 
 </html>

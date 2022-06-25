@@ -3,16 +3,16 @@
 
 <head>
 <meta charset="UTF-8">
-<title>Covid Vs. Housing Market</title>
+<title>Housing Vs. Covid</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="Assets/css/styling.css">
+<link rel="stylesheet" type="text/css" href="Assets/css/housingcovid.css">
 </head>
 
 <body>
     <header>
         <div>
 
-            <h1><b>Covid Vs. The Housing Market</b></h1>
+            <h1><b>Housing Vs. Covid</b></h1>
             
         </div>
     </header>
@@ -42,48 +42,37 @@
             </div>
         </div>
         <div>
-
             <button type="button" id="b2" class="btn btn-link">Anthony's GitHub</button>
         </div>
-        <div id="pspacing">
-
-            <p>We decided to build our project around the question, "How has covid 
-                impacted the housing market?".  To answer this question, we looked 
-                to sources Zillow for spreadsheets on the housing market and an API 
-                through covidactnow.org for the covid data.
-            </p>
-            <p>My responsibility was the entirety of the portion on covid.  Data was 
-                drawn through the covidactnow.org API with desired stats placed into 
-                data frames.  This process occurred for the three counties: Los Angeles, Travis, and 
-                New York.  The data frames are then plotted using matplotlib to 
-                display and compare with each other and the housing market data.  
-                I had predicted the housing market would suffer due to the number 
-                of jobs lost during the pandemic.  What is your prediction and why?
-            </p>
-
-        </div>
-        <br>
         <div class="container-fluid">
             <div class="row justify-content-center">
                 <div>
-                    <a href="los_angeles.html">
-                        <img src="Visualizations/california_cases_deaths.png"/>
-                    </a>
+                    <img src="Visualizations/california_cases_deaths.png"/>
                 </div>
                 <div>
-                    <a href="austin.html">
-                        <img src="Visualizations/texas_cases_deaths.png"/>
-                    </a>
-                </div>
+                    <img src="Visualizations/los_angeles_housing.png"/>
+                </div>    
             </div>
             <div class="row justify-content-center">
-                <a href="newyork.html">
-                    <img src="Visualizations/newyork_cases_deaths.png"/>
-                </a>
+                <div>
+                    <img src="Visualizations/texas_cases_deaths.png"/>
+                </div>
+                <div>
+                    <img src="Visualizations/travis_housing.png"/>
+                </div>    
             </div>
+            <div class="row justify-content-center">
+                <div>
+                    <img src="Visualizations/newyork_cases_deaths.png"/>
+                </div>
+                <div>
+                    <img src="Visualizations/new_york_housing.png"/>
+                </div>    
+            </div>
+            
         </div>
-        
-  
+            <p id="pspacing">My prediction was clearly wrong being that the housing market would suffer.  It appears the very opposite
+                actually.  It seems the housing prices have grown drastically over the span of 2 years.</p>
+        </div>        
 </body>
-
 </html>
